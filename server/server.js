@@ -7,7 +7,7 @@ const PORT = 8080;
 app.use(cors());
 
 app.get("/api/home", (req, res) => {
-  res.json({ message: "Hello from server!" });
+  res.json({ message: "Hello from server!", people: ["John", "Sarah"] });
 });
 
 app.listen(PORT, () => {
